@@ -15,7 +15,7 @@ job('NodeJS Docker example') {
     steps {
         dockerBuildAndPublish {
             repositoryName('iannisk13/jenkins-study')
-            tag('${GIT_REVISION,length=9}')
+            tag('nodejs')
             registryCredentials('dockerhub')
             forcePull(false)
             forceTag(false)
